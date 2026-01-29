@@ -1,39 +1,3 @@
-// import * as SQLite from 'expo-sqlite';
-
-// // open database (sync)
-// const db = SQLite.openDatabaseSync('notes.db');
-
-// export const testSQLite = async () => {
-//   try {
-//     // 1️⃣ Create table
-//     await db.execAsync(`
-//       CREATE TABLE IF NOT EXISTS test_table (
-//         id INTEGER PRIMARY KEY AUTOINCREMENT,
-//         name TEXT
-//       );
-//     `);
-//     console.log('✅ Table created');
-
-//     // 2️⃣ Insert data
-//     await db.execAsync(
-//       `INSERT INTO test_table (name) VALUES ('Expo SQLite Works');`
-//     );
-//     console.log('✅ Data inserted');
-
-//     // 3️⃣ Read data
-//     const result = await db.getAllAsync(
-//       'SELECT * FROM test_table;'
-//     );
-
-//     console.log('📦 SQLite data:', result);
-//   } catch (error) {
-//     console.log('❌ SQLite error:', error);
-//   }
-// };
-
-// export default db;
-
-
 import * as SQLite from 'expo-sqlite';
 
 // Open database (sync)
